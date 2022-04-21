@@ -1,0 +1,362 @@
+*{margin: 0; padding: 0;}
+@font-face {
+    font-family: "roboCondTitu";
+    src: url(../RobotoCondensed-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "roboCond";
+    src: url(../RobotoCondensed-Regular.ttf);
+}
+
+
+
+
+.fondo{
+    background-color: #f4f5f5;
+}
+.encab{
+    grid-area: encabezado;
+    background-color: #202a2f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.barra2{
+    position: sticky;
+    top:0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #202a2f;
+
+}
+.barra{
+    grid-area: barraNav;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: #cb2026;
+}
+
+
+.piePag{
+    grid-area: pie;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #39505c;
+    /* height: 150px; */
+    flex-wrap: wrap;
+}
+
+.boton{
+    width: 200px;
+    height: 30px;
+    background-color: #cb2026;
+    font-family: "roboCound", sans-serif;
+    color: #202a2f;
+    border: none;
+
+}
+.boton:hover{
+    background-color: #a13f42;
+    color: #f4f5f5;
+}
+.botonAct{
+    width: 200px;
+    height: 30px;
+    background-color: #b8b8b8;
+    font-family: "roboCound", sans-serif;
+    color: #202a2f;
+    border: none;
+}
+
+.titulos{
+    grid-area: titulos;
+    font-family: "roboCondTitu";
+    font-size: 40px;
+    color: #cb2026;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.texto{
+    font-family: "roboCond", sans-serif;
+    font-size: 15px;
+    color: #39505c;
+    text-align: justify;
+}
+
+/* INICIO CSS */
+
+.grilla{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "encabezado"
+    "baraNav"
+    "titulo"
+    "texto"
+    "pie";
+}
+
+.titulosIni{
+    grid-area: titulo;
+    font-family: "roboCondTitu", sans-serif;
+    /* height: 8px; */
+    font-size: 35px;
+    color: #cb2026;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #202a2f;
+}
+.textoIni{
+    grid-area: texto;
+    font-family: "roboCond", sans-serif;
+    font-size: 20px;
+    color: #f4f5f5;
+    text-align: justify;
+    padding: 20px;
+    width: 550px;
+
+}
+
+.fondoTextPrinc{
+    background-image: url(../imagenes/maxInicio2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+}
+.dispTextPrinc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    align-items:flex-start;
+}
+
+.espacio{
+    width: 2000px;
+}
+
+/* TRAYECTORIA CSS */
+
+.grillaTray{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "encabezado"
+    "barraNav"
+    "texto"
+    "video"
+    "pie";
+}
+
+.tarjTray{
+    grid-area: texto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 20px;
+}
+
+.cuerpoTray{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f5f5;
+}
+
+.posVideo{
+    grid-area: video;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* MERCH CSS */
+.grillaMerch{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "encabezado"
+    "barraNav"
+    "titulos"
+    "articulos"
+    "botonTienda"
+    "pie";
+}
+.acordeon{
+    grid-area: articulos;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.botonTienda{
+    grid-area: botonTienda;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #004c6c;
+    font-family: "roboCond";
+    font-size: 23px;
+    color: black;
+    border: none;
+    width: 200px;
+    height: 40px;
+    padding: 8px 10px 8px 10px;
+    border: solid;
+    border-color: #39505c;
+    border-radius: 5px;
+    margin: 30px;
+}
+.botonTienda:hover{
+    background-color: #39505c;
+    color: #f4f5f5;
+    border-color: #202a2f;
+}
+.posBoton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* proxCarrera CSS */
+.grillaProxCar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "encabezado"
+    "barraNav"
+    "titulo"
+    "carreras"
+    "pie";
+}
+.posFecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+#posFechaYBand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.formTarj{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: #39505c;
+    /* padding: 10px; */
+    width: 320px;
+    margin: 8px;
+}
+.tamBand{
+    width: 50px;
+    height: 32px;
+}
+.tamPista{
+    width: 300px;
+    height: 230px;
+}
+.event{
+    font-family: "roboCondTitu";
+    color: #cb2026;
+    background-color: #202a2f;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 3px;
+}
+.fecha{
+    font-family: "roboCond";
+    background-color: #39505c;
+    color: #f4f5f5;
+    font-size: 12px;
+    padding: 10px;
+}
+.fondo{
+    background-color: #39505c;
+}
+.orgTarj{
+    grid-area: carreras;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* galeria CSS */
+
+.grillaGale{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "encabezado"
+    "barraNav"
+    "titulo"
+    "fotos"
+    "pie";
+}
+
+.gale{
+    grid-area: fotos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgGrande{
+    width: 1023px;
+    height: 600px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 360px){
+    .titulosIni{ font-size: 40px;}
+    .textoIni {font-size: 25px; width: 80%;}
+    .titulos{font-size: 40px;}
+    .texto{font-size: 25px;}
+    .barra2{position: relative;border-style: solid;border-width: 3px;border-color: #202a2f; bottom: 0px;}
+    .acordeon{margin-left: 10%; margin-right: 10%;}
+    .imgGrande{width: 92%;height: 24%;}
+    .tarjTray{width: 80%;}
+    
+}
