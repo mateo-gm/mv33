@@ -80,7 +80,7 @@
 }
 
 .titulos{
-    grid-area: titulos;
+    grid-area: titulo;
     font-family: "roboCondTitu";
     font-size: 40px;
     color: #cb2026;
@@ -196,7 +196,7 @@
     grid-template-areas: 
     "encabezado"
     "barraNav"
-    "titulos"
+    "titulo"
     "articulos"
     "botonTienda"
     "pie";

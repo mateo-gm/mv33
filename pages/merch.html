@@ -5,6 +5,8 @@
         <title>/// MV33</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="../imagenes/33.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
@@ -24,8 +26,8 @@
             </nav>
         </div>
         <div>
-            <h1 class="titulos">Articulos de la Tienda</h1>
-            <div class="acordeon">
+            <h1 class="animate__animated animate__backInUp titulos">Articulos de la Tienda</h1>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200" data-aos-delay="800"class="acordeon">
                 <img src="https://www.verstappenshop.com/include/thumb/thumb.php?src=/img/product/829_49c7400_MV_hoodie_blauw_Front.png&w=260&f=png" alt="">
                 <img src="https://www.verstappenshop.com/include/thumb/thumb.php?src=/img/product/891_a4ca68c_701218526001_pp_01_red_bull.png&w=260&f=png" alt="">
                 <img src="https://www.verstappenshop.com/include/thumb/thumb.php?src=/img/product/893_6e3a428_701218647001_pp_01_red_bull.png&w=260&f=png" alt="">
@@ -44,7 +46,7 @@
             </div>
             
             <a class= "posBoton" href="https://www.verstappenshop.com/collections/red-bull-racing-official-teamline" target="blank">
-                <button class="botonTienda"> 
+                <button data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="1400" class="botonTienda"> 
                     <img width="30px" height="30px" src="../imagenes/shop2.png" alt="">
                     <p>Ir a la Tienda</p>
                 </button>
@@ -58,6 +60,8 @@
                 <img src="../imagenes/pirelli.png" alt="">
             </div>
         </footer>
-    </div>    
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>    
     </body>
 </html>
