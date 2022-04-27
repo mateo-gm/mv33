@@ -6,56 +6,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="icon" type="image/x-icon" href="../imagenes/33.png">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body class="fondo">
-    <div class="grillaTray">
-        <header>
-            <div class="encab">
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-12 encab">
                 <a href="../index.html"><img src="../imagenes/logo2.png" width="200px" height="150px"></a>
             </div>
         </header>
-        <div class="barra2">
-            <nav class="barra">
-                <a href="../index.html" ><button class="boton">INICIO</button></a>
-                <a href="trayectoria.html"><button class="botonAct">TRAYECTORIA</button></a>
-                <a href="proxCarrera.html"><button class="boton">PRÓXIMA CARRERA</button></a>
-                <a href="merch.html"><button class="boton">MERCHANDISING</button></a>
-                <a href="galeria.html"><button class="boton">GALERÍA</button></a>
-            </nav>
+        <nav class="row navbar navbar-expand-lg navbar-light colorbarra">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="trayectoria.html">TRAYECTORIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proxCarrera.html">PRÓXIMA CARRERA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="merch.html">MERCHANDISING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">GALERÍA</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="row cuerpoTray">
+        <div class="offset-1 col-10 cuerpoTray"> 
+                <div class="animate__animated animate__backInLeft row">
+                    <p class="col-4">Max se unió al Equipo Pex Racing, un equipo de CRG. Ganó el campeonato Minimax y el campeonato KF5 belga.</p>
+                    <h2 class="titulos offset-1 col-1">2009</h2>
+                </div>
+                <div class="animate__animated animate__backInRight row">
+                    <h2 class="titulos offset-6 col-1">2010</h2>
+                    <p class="texto offset-1 col-4">Max decide competir a nivel internacional, por lo cual se acercó al karting internacional y firmó con el equipo CRG para correr campeonatos mundiales y europeos</p>
+                </div>
+                <div class="animate__animated animate__backInLeft row">
+                    <p class="texto col-4">Se unió al Red Bull Junior Team. Seis días más tarde, fue confirmado como uno de los pilotos de la escudería Toro Rosso para 2015. A los 17 años y 164 días de edad, se convertiría en el piloto más joven en iniciar una carrera del Campeonato Mundial.</p>
+                    <h2 class="titulos offset-1 col-1">2014</h2>
+                </div>
+                <div class="animate__animated animate__backInRight row">
+                    <h2 class="titulos offset-6 col-1">2016</h2>
+                    <p class="texto offset-1 col-4">Tras sólo cuatro carreras de 2016, Red Bull decide promover a Verstappen a su primer equipo, escudería Red Bull Racing. El 15 de mayo de 2016, en su carrera de debut con la escudería austríaca, se convirtió en el piloto más joven de la historia en ganar una carrera en la Fórmula 1, con 18 años y 228 días.</p>
+                </div>
+                <div class="animate__animated animate__backInLeft row">
+                    <p class="texto col-4">Max Verstappen inició su séptima temporada en la Fórmula 1 con una lucha rueda a rueda contra <a href="https://es.wikipedia.org/wiki/Lewis_Hamilton" target="blank">Lewis Hamilton</a>. Finalmente, en el Gran Premio de Abu Dabi, quien ganara la carrera, o finalizada delante del otro en zona de puntos, sería el campeón de la temporada 202. El neerlandés permanecería detrás de Hamilton con un ritmo de carrera inferior, hasta que, a falta de cuatro vueltas, un accidente obligó a parar la carrera con coche de seguridad. La carrera se relanzó a falta de una sola vuelta, con Hamilton primero y Verstappen segundo, pero en esta última vuelta Max logro adelantar a Lewis y gano así su primer campeonato mundial.</p>
+                    <h2 class="titulos offset-1 col-1">2020</h2>
+                </div>   
         </div>
-        <div class="cuerpoTray"> 
-            <ul>
-                <li><div class="tarjTray animate__animated animate__backInLeft">
-                    <h2 class="titulos">2009</h2>
-                    <p class="texto">Max se unió al Equipo Pex Racing, un equipo de CRG. Ganó el campeonato Minimax y el campeonato KF5 belga.</p>
-                <!-- <img src="../imagenes/max2009.webp" alt="Max con 12 años de edad."> -->
-                </div></li>
-                <li><div class="tarjTray animate__animated animate__backInRight">
-                    <h2 class="titulos">2010</h2>
-                    <p class="texto">Max decide competir a nivel internacional, por lo cual se acercó al karting internacional y firmó con el equipo CRG para correr campeonatos mundiales y europeos</p>
-                </div></li>
-                <li><div class="tarjTray animate__animated animate__backInLeft">
-                    <h2 class="titulos">2014</h2>
-                    <p class="texto">Se unió al Red Bull Junior Team. Seis días más tarde, fue confirmado como uno de los pilotos de la escudería Toro Rosso para 2015. A los 17 años y 164 días de edad, se convertiría en el piloto más joven en iniciar una carrera del Campeonato Mundial.</p>
-                </div></li>
-                <li><div class="tarjTray animate__animated animate__backInRight">
-                    <h2 class="titulos">2016</h2>
-                    <p class="texto">Tras sólo cuatro carreras de 2016, Red Bull decide promover a Verstappen a su primer equipo, escudería Red Bull Racing. El 15 de mayo de 2016, en su carrera de debut con la escudería austríaca, se convirtió en el piloto más joven de la historia en ganar una carrera en la Fórmula 1, con 18 años y 228 días.</p>
-                </div></li>
-                <li><div class="tarjTray animate__animated animate__backInLeft">
-                    <h2 class="titulos">2020</h2>
-                    <p class="texto">Max Verstappen inició su séptima temporada en la Fórmula 1 con una lucha rueda a rueda contra <a href="https://es.wikipedia.org/wiki/Lewis_Hamilton" target="blank">Lewis Hamilton</a>. Finalmente, en el Gran Premio de Abu Dabi, quien ganara la carrera, o finalizada delante del otro en zona de puntos, sería el campeón de la temporada 202. El neerlandés permanecería detrás de Hamilton con un ritmo de carrera inferior, hasta que, a falta de cuatro vueltas, un accidente obligó a parar la carrera con coche de seguridad. La carrera se relanzó a falta de una sola vuelta, con Hamilton primero y Verstappen segundo, pero en esta última vuelta Max logro adelantar a Lewis y gano así su primer campeonato mundial.</p>
-                </div></li>
-            </ul>  
-            
         </div>
-        <div class="posVideo cuerpoTray">
-            <!-- <video class= "posVideo" src="videos/maxHisto.mp4" controls preload="auto"></video> -->
-            <iframe width="800" height="420" src="https://www.youtube.com/embed/FZjG3oft5rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+            <div class="posVideo cuerpoTray">
+                <iframe width="800" height="420" src="https://www.youtube.com/embed/FZjG3oft5rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
         
-    <footer>
+    <footer class="row">
         <div class="piePag">
             <img src="../imagenes/oracle-partner.png" alt="">
             <img src="../imagenes/honda.png" alt="">
@@ -63,6 +80,7 @@
             <img src="../imagenes/pirelli.png" alt="">
         </div>
     </footer>
-    </div>    
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>    
     </body>
 </html>

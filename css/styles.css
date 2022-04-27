@@ -166,21 +166,9 @@
     "pie";
 }
 
-.tarjTray{
-    grid-area: texto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 800px;
-    margin: 20px;
-}
 
 .cuerpoTray{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
     background-color: #f4f5f5;
 }
 
@@ -380,6 +368,5 @@
     .barra2{position: relative;border-style: solid;border-width: 3px;border-color: #202a2f; bottom: 0px;}
     .acordeon{margin-left: 10%; margin-right: 10%;}
     .imgGrande{width: 92%;height: 24%;}
-    .tarjTray{width: 80%;}
 
 }
