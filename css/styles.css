@@ -139,6 +139,7 @@
     background-size: cover;
     background-position: center;
     background-attachment:scroll;
+    margin: -15px;
 }
 .dispTextPrinc{
     display: flex;
@@ -157,7 +158,7 @@
 .grillaTray{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas: 
+    grid-template-areas:
     "encabezado"
     "barraNav"
     "texto"
@@ -196,7 +197,7 @@
 .grillaMerch{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas: 
+    grid-template-areas:
     "encabezado"
     "barraNav"
     "titulo"
@@ -252,7 +253,7 @@
 .grillaProxCar{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "encabezado"
     "barraNav"
     "titulo"
@@ -329,7 +330,7 @@
 .grillaGale{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas: 
+    grid-template-areas:
     "encabezado"
     "barraNav"
     "titulo"
@@ -362,6 +363,15 @@
     margin: 10px;
 }
 
+/* MODIFICACIONES BOOTS */
+
+.colorbarra{
+    background-color: #cb2026;
+}
+
+
+/* USO DE MEDIA */
+
 @media only screen and (max-width: 360px){
     .titulosIni{ font-size: 40px;}
     .textoIni {font-size: 25px; width: 80%;}
@@ -371,5 +381,5 @@
     .acordeon{margin-left: 10%; margin-right: 10%;}
     .imgGrande{width: 92%;height: 24%;}
     .tarjTray{width: 80%;}
-    
+
 }
