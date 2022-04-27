@@ -6,25 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="icon" type="image/x-icon" href="../imagenes/33.png">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-    <div class="grillaProxCar">
-        <header>
+    <div class="container-fluid">
+        <header class="row">
             <div class="encab">
                 <a href="../index.html"><img src="../imagenes/logo2.png" width="200px" height="150px"></a>
             </div>
         </header>
-        <div class="barra2">
-            <nav class="barra">
-                <a href="../index.html" ><button class="boton">INICIO</button></a>
-                <a href="trayectoria.html"><button class="boton">TRAYECTORIA</button></a>
-                <a href="proxCarrera.html"><button class="botonAct">PRÓXIMA CARRERA</button></a>
-                <a href="merch.html"><button class="boton">MERCHANDISING</button></a>
-                <a href="galeria.html"><button class="boton">GALERÍA</button></a>
-            </nav>
-        </div>   
-        <h1 class="titulosIni">Calendario 2022</h1>
+        <nav class="row navbar navbar-expand-lg navbar-light colorbarra">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="proxCarrera.html">PRÓXIMA CARRERA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trayectoria.html">TRAYECTORIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="merch.html">MERCHANDISING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">GALERÍA</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="row">   
+            <h1 class="titulosIni">Calendario 2022</h1>
+        </div>
         <div class="orgTarj animate__animated animate__fadeInUp">
             <div class="formTarj">
                 <div class="fondo"><h3 class="event">Fecha 1</h3></div>
@@ -300,7 +320,7 @@
                 <img src="../flags/f22.png" alt="" class="tamPista">
             </div>  
         </div>
-        <footer>
+        <footer class="row">
             <div class="piePag">
                 <img src="../imagenes/oracle-partner.png" alt="">
                 <img src="../imagenes/honda.png" alt="">
@@ -308,6 +328,7 @@
                 <img src="../imagenes/pirelli.png" alt="">
             </div>
         </footer>
-    </div>   
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>   
     </body>
 </html>
