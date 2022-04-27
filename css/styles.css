@@ -129,7 +129,7 @@
     color: #f4f5f5;
     text-align: justify;
     padding: 20px;
-    width: 550px;
+    width: 45%;
 
 }
 
@@ -374,7 +374,7 @@
 
 @media only screen and (max-width: 360px){
     .titulosIni{ font-size: 40px;}
-    .textoIni {font-size: 25px; width: 80%;}
+    .textoIni {font-size: 25px; width: 100%;}
     .titulos{font-size: 40px;}
     .texto{font-size: 25px;}
     .barra2{position: relative;border-style: solid;border-width: 3px;border-color: #202a2f; bottom: 0px;}
