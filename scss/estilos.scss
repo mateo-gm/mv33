@@ -128,7 +128,22 @@
     top: 0px;
     z-index: 10000;
 }
-
+// INDEX
+.fondoTextPrinc{
+    background-image: url(../imagenes/maxInicio2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    margin: -15px;
+}
+.dispTextPrinc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+    align-items:flex-start;
+}
 @keyframes aparicion {
     0% {opacity: 0;}
     20% {opacity: 0;}
@@ -138,7 +153,147 @@
     100% {opacity: 1;}
 
 }
-/* USO DE MEDIA */
+// TRAYECTORIA
+.posVideo{
+    grid-area: video;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.cuerpoTray{
+    padding: 20px;
+    background-color: #f4f5f5;
+}
+
+// MERCH
+.acordeon{
+    grid-area: articulos;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.posBoton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+//PROX CARRERA
+
+.posFecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+#posFechaYBand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.formTarj{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: #39505c;
+    width: 320px;
+    margin: 8px;
+}
+.tamBand{
+    width: 50px;
+    height: 32px;
+}
+.tamPista{
+    width: 300px;
+    height: 230px;
+}
+.event{
+    font-family: "roboCondTitu";
+    color: #cb2026;
+    background-color: #202a2f;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 3px;
+}
+.fecha{
+    font-family: "roboCond";
+    background-color: #39505c;
+    color: #f4f5f5;
+    font-size: 12px;
+    padding: 10px;
+}
+.fondo{
+    background-color: #39505c;
+}
+.orgTarj{
+    grid-area: carreras;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+// GALERIA
+
+.grillaGale{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "encabezado"
+    "barraNav"
+    "titulo"
+    "fotos"
+    "pie";
+}
+
+.posGale{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tamGale{
+    width: 60%;
+}
+
+.gale{
+    grid-area: fotos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgGrande{
+    width: 1023px;
+    height: 600px;
+    margin: 10px;
+}
+
+// USO DE MEDIA
 @media screen and (min-width: 1444px){
     .textoIni{width: 50%;}
 }
