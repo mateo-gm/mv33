@@ -10,13 +10,21 @@
     src: url(../RobotoCondensed-Regular.ttf);
 }
 
+$colores: (
+    w: #f4f5f5,
+    grisE: #202a2f,
+    grisP: #39505c,
+    rojo: #cb2026,
+    bor: #a13f42,
+);
+    
 .fondo{
-    background-color: #f4f5f5;
+    background-color: map-get($map: $colores, $key: w);
 }
 
 .encab{
     grid-area: encabezado;
-    background-color: #202a2f;
+    background-color: map-get($map: $colores, $key: grisE);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -34,7 +42,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #39505c;
+    background-color: map-get($map: $colores, $key: grisP);
     flex-wrap: wrap;
     margin-top: 15px;
     padding-top: 15px;
@@ -44,13 +52,13 @@
 .boton{
     width: 200px;
     height: 30px;
-    background-color: #cb2026;
+    background-color: map-get($map: $colores, $key: rojo);
     font-family: "roboCound", sans-serif;
-    color: #202a2f;
+    color: map-get($map: $colores, $key: grisE);
     border: none;
         &:hover{
-            background-color: #a13f42;
-            color: #f4f5f5;
+            background-color: map-get($map: $colores, $key: bor);
+            color: map-get($map: $colores, $key: w);
         }
 
 }
@@ -60,7 +68,7 @@
     height: 30px;
     background-color: #b8b8b8;
     font-family: "roboCound", sans-serif;
-    color: #202a2f;
+    color: map-get($map: $colores, $key: grisE);
     border: none;
 }
 
@@ -79,13 +87,13 @@
     height: 40px;
     padding: 8px 10px 8px 10px;
     border: solid;
-    border-color: #39505c;
+    border-color: map-get($map: $colores, $key: grisP);
     border-radius: 5px;
     margin: 30px;
         &:hover{
-            background-color: #39505c;
-            color: #f4f5f5;
-            border-color: #202a2f;
+            background-color: map-get($map: $colores, $key: grisP);
+            color: map-get($map: $colores, $key: w);
+            border-color: map-get($map: $colores, $key: grisE);
         }
 }
 
@@ -93,7 +101,7 @@
     grid-area: titulo;
     font-family: "roboCondTitu", sans-serif;
     font-size: 40px;
-    color: #cb2026;
+    color: map-get($map: $colores, $key: rojo);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -103,27 +111,27 @@
     font-size: 35px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: #202a2f;
+    background-color: map-get($map: $colores, $key: grisE);
     
 }
 
 .texto{
     font-family: "roboCond", sans-serif;
     font-size: 15px;
-    color: #39505c;
+    color: map-get($map: $colores, $key: grisP);
     text-align: justify;
 }
 
 .textoIni{
     @extend .texto;
     font-size: 20px;
-    color: #f4f5f5;
+    color: map-get($map: $colores, $key: w);
     padding: 20px;
     width: 70%;
 }
 
 .colorbarra{
-    background-color: #cb2026;
+    background-color:map-get($map: $colores, $key: rojo);
     position: sticky;
     top: 0px;
     z-index: 10000;
@@ -164,7 +172,7 @@
 }
 .cuerpoTray{
     padding: 20px;
-    background-color: #f4f5f5;
+    background-color: map-get($map: $colores, $key: w);
 }
 
 // MERCH
@@ -215,22 +223,25 @@
     border-style: solid;
     border-radius: 12px;
     border-width: 3px;
-    border-color: #39505c;
+    border-color: map-get($map: $colores, $key: grisP);
     width: 320px;
     margin: 8px;
 }
+@mixin tamano ($anch, $alto) {
+    width: $anch;
+    height: $alto;
+}
+
 .tamBand{
-    width: 50px;
-    height: 32px;
+    @include tamano(50px, 32px)
 }
 .tamPista{
-    width: 300px;
-    height: 230px;
+    @include tamano(300px, 230px)
 }
 .event{
     font-family: "roboCondTitu";
-    color: #cb2026;
-    background-color: #202a2f;
+    color: map-get($map: $colores, $key: rojo);
+    background-color: map-get($map: $colores, $key: grisE);
     font-size: 18px;
     text-align: center;
     border-radius: 8px;
@@ -238,13 +249,13 @@
 }
 .fecha{
     font-family: "roboCond";
-    background-color: #39505c;
-    color: #f4f5f5;
+    background-color: map-get($map: $colores, $key: grisP);
+    color: map-get($map: $colores, $key: w);
     font-size: 12px;
     padding: 10px;
 }
 .fondo{
-    background-color: #39505c;
+    background-color: map-get($map: $colores, $key: grisP);
 }
 .orgTarj{
     grid-area: carreras;
