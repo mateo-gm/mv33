@@ -154,6 +154,10 @@
   padding: 20px;
   background-color: #f4f5f5; }
 
+.tamVideo {
+  width: 740px;
+  height: 420px; }
+
 .acordeon {
   grid-area: articulos;
   display: flex;
@@ -246,7 +250,8 @@
   justify-content: center; }
 
 .tamGale {
-  width: 60%; }
+  width: 800px;
+  height: 600px; }
 
 .gale {
   grid-area: fotos;
@@ -267,16 +272,16 @@
 
 @media only screen and (max-width: 360px) {
   .titulosIni {
-    font-size: 40px; }
+    font-size: 35px; }
   .textoIni {
-    font-size: 25px;
+    font-size: 18px;
     width: 100%;
     animation-name: aparicion;
     animation-duration: 6s; }
   .titulos, .titulosIni {
-    font-size: 40px; }
+    font-size: 35px; }
   .texto, .textoIni {
-    font-size: 25px; }
+    font-size: 18px; }
   .barra2 {
     position: relative;
     border-style: solid;
@@ -288,4 +293,10 @@
     margin-right: 10%; }
   .imgGrande {
     width: 92%;
-    height: 24%; } }
+    height: 24%; }
+  .tamGale {
+    width: 350px;
+    height: 200px; }
+  .tamVideo {
+    width: 340px;
+    height: 200px; } }
